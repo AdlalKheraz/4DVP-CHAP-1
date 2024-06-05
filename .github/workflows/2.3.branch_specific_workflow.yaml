@@ -1,0 +1,14 @@
+# .github/workflows/2.3.branch_specific_workflow.yaml
+name: Branch specifi workflow
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello, world!"
